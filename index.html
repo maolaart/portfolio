@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- swiper CSS-->
+  <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css">
+  <title>Portfolio</title>
+
+</head>
+
+<body>
+  <!-- navbar start -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">MAOLA<span>ART.</span></a>
+      <div class="navbar-link">
+        <div class="navbar-menu">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#project">PROJECT</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#sidebar" id="sidebar"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- navbar end -->
+
+  <!-- landing page start -->
+
+  <section>
+    <div class="bg-landing-page">
+      <div class="wrapper">
+        <div class="landing-page" id="home">
+          <main class="content">
+            <h2>Hallo! I Am</h2>
+            <h1>Andrea Maulana Pangestu</h1>
+            <p>Web <span>Developer</span></p>
+            <a href="#about" class="btn-about">About Me</a>
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- landing page end -->
+
+  <!-- about me section start -->
+  <section>
+    <div class="wrapper">
+      <div class="about-me" id="about">
+        <h2><span>About</span> Me</h2>
+        <div class="row">
+          <div class="img-about">
+            <img src="assets/images/profile.jpg" alt="profile">
+          </div>
+          <div class="desc-about">
+            <h3>Hey, What's Up? Hello!</h3>
+            <p>My name is Andrea Maulana Pangestu. I have degree in Computer Science from Gunadarma University. I am a
+              passionate computer science graduate with a strong interest in technology and programming development.
+              Have
+              experience in
+              developing Dynamic Website and Internet of Things Technology.
+            </p>
+            <p>
+              As a professional, I take great pride in my high sense of responsibility. I am also a
+              fast learner, always eager to expand my knowledge and skills to stay abreast of emerging technologies and
+              industry trends. Moreover, I thrive in collaborative environments and enjoy working as part of a team.
+            </p>
+            <p>
+              In my future efforts, I am excited to leverage my knowledge and skills to contribute to the ever-evolving
+              field of technology
+            </p>
+            <div class="desc-btn">
+              <a href="assets/files/new_cv.pdf" download onclick="handleDownloadClick(event)"> > Resume < </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about me section end -->
+
+  <!-- skills section -->
+  <section>
+    <div class="wrapper">
+      <div id="skill" class="skill">
+        <h2>My<span> Skills</span></h2>
+        <div class="row swiper skill-swiper">
+          <div class="skill-list swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="assets/images/html-5.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/css.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/js.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/html-5.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/css.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/js.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/html-5.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/css.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/js.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/html-5.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/css.png" alt="html">
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/images/js.png" alt="html">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- skills section end -->
+
+  <!-- project section start -->
+  <section>
+    <div class="bg-project">
+      <div class="wrapper">
+        <div class="project" id="project">
+          <h2><span>My Recent</span> Project</h2>
+          <div class="row">
+            <div class="card">
+              <h3>React.js - SPA</h3>
+              <img src="assets/images/search-movie1.png" alt="mstore">
+              <p>Maolaart Movie List</p>
+            </div>
+            <div class="card">
+              <h3>Ecommerce</h3>
+              <img src="assets/images/mstore-ecommerce1.png" alt="mstore">
+              <p>MStore Music Ecommerce</p>
+            </div>
+            <div class="card">
+              <h3>Ecommerce</h3>
+              <img src="assets/images/mstore-ecommerce1.png" alt="mstore">
+              <p>MStore Music Ecommerce</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- project section end -->
+
+
+  <!-- contact section start -->
+  <section>
+    <div class="wrapper">
+      <div class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <!-- <div class="contact-row">
+          <div class="wrap">
+            <div class="contact-card">
+              <div class="info">
+                <p>Location</p>
+                <p>Social</p>
+                <p>Media</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <form id="form">
+                <div class="contact-list">
+                  <h3>Send Message</h3>
+                  <div class="contact-name">
+                    <input type="text" placeholder="Name">
+                  </div>
+                  <div class="contact-email">
+                    <input type="email" placeholder="Email">
+                  </div>
+                  <div class="contact-desc">
+                    <input type="text" placeholder="Input Message">
+                  </div>
+                </div>
+                <p>this is section about contact</p>
+              </form>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+  
+  <!-- script swiper -->
+  <script src="js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
+
+  <!-- script jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  
+  <!-- main script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
