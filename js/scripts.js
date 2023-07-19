@@ -28,12 +28,14 @@ function handleDownloadClick(event) {
 
 
 // skill swiper
-var swiper = new Swiper(".skill-swiper", {
-    slidesPerView: 6,
-    spaceBetween: 10,
-    slidePerGroup:1,
+var swiper = new Swiper(".skill-content", {
+    slidesPerView: 5,
+    spaceBetween: 25,
+    centerSlide:true,
+    grabCursor:true,
     loop: true,
-    loopFillGroupWithBlank:true,
+    fade:true,
+    // loopFillGroupWithBlank:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -42,6 +44,21 @@ var swiper = new Swiper(".skill-swiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints:{
+      0:{
+        slidesPerView:2,
+      },
+      320:{
+        slidesPerView:3,
+      },
+      768:{
+        slidesPerView:5,
+      },
     },
 
   }); 
