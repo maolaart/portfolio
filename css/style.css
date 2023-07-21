@@ -30,7 +30,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.925);
     box-shadow: 0 2px 3px #111111;
 }
 
@@ -519,23 +519,24 @@ section .bg-project{
     font-family: 'Poppins', sans-serif;
 }
 
-.contact .contact-container .contact-content .contact-wrapper button{
+.contact .contact-container .contact-content .contact-wrapper .btn-send{
     text-shadow: 1px 1px 3px var(--shadow);
     box-shadow: 1px 1px 3px var(--shadow);
     background-color: var(--primary);
     color: var(--light);
-    padding: 8px;
+    padding: 7px;
     width: 7rem;
     height: 2.5rem;    
     margin: 1.2rem 0 0 5%;
     border-radius: 5px;
+    text-align: center;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: .2s;
 }
 
-.contact .contact-container .contact-content .contact-wrapper button:hover{
+.contact .contact-container .contact-content .contact-wrapper .btn-send:hover{
     background-color: var(--light);
     color: var(--primary);
 }
@@ -637,6 +638,10 @@ footer{
         object-fit: cover;
         object-position: center;
     }
+
+    .contact .contact-container .contact-content .contact-wrapper .btn-send{
+        padding: 5px;
+    }
 }
 
 /* Mobile */
@@ -662,6 +667,7 @@ footer{
     }
     .contact .contact-container .contact-content .contact-wrapper{
         width: 100%;
+        justify-content: center;
     }
     .contact .contact-container .contact-content .contact-info .social-list .list-contact{
         padding: 5px;
