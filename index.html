@@ -12,11 +12,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-  <!-- my style -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesomes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- swiper CSS-->
   <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
   <title>Portfolio</title>
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -163,7 +167,7 @@
       </div>
     </div>
   </section>
-       
+
   <!-- skills section end -->
 
   <!-- project section start -->
@@ -171,7 +175,7 @@
     <div class="bg-project">
       <div class="wrapper">
         <div class="project" id="project">
-          <h2><span>My Recent</span> Project</h2>
+          <h2><span>My</span> Project</h2>
           <div class="row">
             <div class="card">
               <h3>React.js - SPA</h3>
@@ -195,39 +199,55 @@
   <section>
     <div class="wrapper">
       <div class="contact" id="contact">
-        <h2>Contact <span>Me</span></h2>
-        <!-- <div class="contact-row">
-          <div class="wrap">
-            <div class="contact-card">
-              <div class="info">
-                <p>Location</p>
-                <p>Social</p>
-                <p>Media</p>
-              </div>
-            </div>
-            <div class="contact-card">
-              <form id="form">
-                <div class="contact-list">
-                  <h3>Send Message</h3>
-                  <div class="contact-name">
-                    <input type="text" placeholder="Name">
-                  </div>
-                  <div class="contact-email">
-                    <input type="email" placeholder="Email">
-                  </div>
-                  <div class="contact-desc">
-                    <input type="text" placeholder="Input Message">
-                  </div>
-                </div>
-                <p>this is section about contact</p>
+        <h2>Contact<span> Me</span> </h2>
+        <div class="contact-container">
+          <div class="contact-content">
+            <div class="contact-wrapper">
+              <form>
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder=""></textarea>
+                <button type="submit" id="submit-message" value="send message">Send</button>
               </form>
             </div>
+            <div class="contact-info">
+              <h3 class="title-contact">Socials</h3>
+              <div class="contact-info-wrapper">
+                <div class="list-contact">
+                  <div class="icon">
+
+                </div>
+                <div class="list-contact">
+                  <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+                <div class="list-contact">
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div> -->
+        </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- contact section end -->
+
+  <!-- footer -->
+  <footer>
+    <div class="copyright">
+      <p>Copyright &copy; 2023 <b>maolaart</b>. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- footer end -->
 
   <!-- script swiper -->
   <script src="js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
