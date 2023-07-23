@@ -12,10 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-  <!-- font awesomes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- swiper CSS-->
   <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
   <title>Portfolio</title>
@@ -70,10 +70,10 @@
       <div class="about-me" id="about">
         <h2><span>About</span> Me</h2>
         <div class="row">
-          <div class="img-about">
+          <div class="img-about" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/images/profile.jpg" alt="profile">
           </div>
-          <div class="desc-about">
+          <div class="desc-about" data-aos="fade-left" data-aos-delay="100">
             <h3>Hey, What's Up? Hello!</h3>
             <p>My name is Andrea Maulana Pangestu. I have degree in Computer Science from Gunadarma University. I am a
               passionate computer science graduate with a strong interest in technology and programming development.
@@ -233,16 +233,23 @@
                 <h3 class="title-contact">Social Media</h3>
                 <div class="social-list">
                   <div class="list-contact">
-                    <div class="icon">
+                    <div class="icon animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
                       <a href="https://www.instagram.com/andreamaulanaa_/?hl=en" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                       </a>
                     </div>
                   </div>
                   <div class="list-contact">
-                    <div class="icon">
+                    <div class="icon animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
                       <a href="https://www.linkedin.com/in/andreamaulanaa/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="list-contact">
+                    <div class="icon animate__animated animate__heartBeat animate__infinite	infinite animate__slower">
+                      <a href="https://github.com/maolaart" target="_blank">
+                        <i class="fa-brands fa-github"></i>
                       </a>
                     </div>
                   </div>
@@ -268,12 +275,15 @@
   <!-- script swiper -->
   <script src="js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
 
-  <!-- semantic ui
-  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
-
   <!-- script jquery -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <!--AoS script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- main script -->
   <script src="js/scripts.js"></script>
